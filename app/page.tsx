@@ -54,7 +54,7 @@ export default function Home() {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-xl font-semibold text-gray-900 text-center py-4">
-            Interactive & Dynamic AI Website - DriveThrough Demo
+            Interactive & Dynamic AI Website - Pick up - DriveThrough Demo
           </h1>
         </div>
       </div>
