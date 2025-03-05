@@ -1,0 +1,7 @@
+[build]
+  command = "next build"
+  publish = ".next"
+
+[dev]
+  command = "next dev"
+  port = 3000

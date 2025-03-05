@@ -61,6 +61,13 @@ const ProductDisplay: React.FC = () => {
 
   const filteredProducts = products.filter(product => product.type === activeCategory);
 
+  const formatCurrency = (amount: number) => {
+    return new Intl.NumberFormat('en-ZM', {
+      style: 'currency',
+      currency: 'ZMW'
+    }).format(amount);
+  };
+
   return (
     <div>
       {/* Menu Header */}
@@ -116,7 +123,7 @@ const ProductDisplay: React.FC = () => {
                   {product.name}
                 </h3>
                 <p className="text-sm text-gray-900">
-                  ${product.price.toFixed(2)}
+                  {formatCurrency(product.price)}
                 </p>
               </div>
             </div>
